@@ -1,0 +1,64 @@
+TV Detox: Thomson Path 7X Pro (Android TV 9, 1 GB RAM), 25 Oct 2026
+=====================================================================
+
+Free memory (MemAvailable), both measured ~6 min after boot
+  Before: 256 MB
+  After : 282 MB  (+26 MB)
+  Note: during the "after" reading, YouTube, File Commander, VLC, Live TV and the Play
+  Store had just been opened from the remote (~135 MB). They weren't open in "before".
+
+Background apps that no longer run (memory they used before)
+  Google home screen   114 MB  -> replaced by new home screen 13.5 MB
+  MX Player             42 MB  -> uninstalled
+  AirScreen             18 MB  -> uninstalled
+  Play Movies           14.5 MB -> disabled
+  Spotify               14 MB  -> uninstalled
+  Recommendations/ads    8 MB  -> disabled
+  Total: about 197 MB less
+
+What changed (full list with old values: changes.log)
+  - Animations 1.5x -> 0, screensaver off, auto-off 5 min -> never
+  - Uninstalled 8 apps (APK backups in apk-backup/)
+  - Disabled 23 preinstalled apps (incl. Google home screen)
+  - Installed the TV Detox home screen (com.ansub.tvhome v1.5.4) and made it Home
+
+Checked after reboot: boots to new home screen, Bluetooth remote reconnects, INPUT button,
+HDMI1-3/AV inputs, YouTube button, Settings/Bluetooth/Network shortcuts all work.
+
+Known side effects
+  - "All Apps" button: does nothing (it opened Google's home screen)
+  - Prime Video button on the remote: does nothing (Prime Video is disabled)
+    Bring it back: adb shell pm enable com.amazon.amazonvideo.livingroom
+
+Custom spiritual home screen (25 Oct 2026, 4:40 PM)
+===================================================
+  App: com.kartik.tvhome ("Home"), source in home-src/, built with home-src/build.sh.
+  Replaced the TV Detox home screen (backed up in apk-backup/com.ansub.tvhome).
+  Uses about 18 MB of memory.
+
+  Home page: THOMSON + clock + date; Wi-Fi / Bluetooth / TV-settings buttons top right;
+  cards: Sandhya Aarti countdown, Jay Swaminarayan, Wi-Fi name; apps: YouTube, JioHotstar,
+  VLC, File Commander, Play Store, All Apps; Recommended Videos; menu: Home, Aarti, Kirtan,
+  Katha, Live TV, Apps, Settings. Wallpaper: the darshan photo, with the face and hands kept clear.
+
+  Sandhya Aarti: 6:30 PM. Popup "Play now?" every day at that time. Change the time in
+  Settings > Sandhya Aarti time with Left/Right (5 minutes per press), or turn the popup off there.
+
+  Tested: video plays in VLC, BAPS Kirtan Channel opens in YouTube, popup, Wi-Fi card,
+  Bluetooth row, time control, restart (boots to this home, alarm set again, remote reconnects).
+  Not possible: the remote's All Apps button (Android TV 9 sends it only to Google's home screen).
+  Use the All Apps tile or the Apps menu instead.
+
+ADD MORE VIDEOS LATER
+  Folders on the TV: BAPS/Aarti, BAPS/Kirtan, BAPS/Katha. The file name is the title.
+  A .jpg with the same name is used as its thumbnail.
+  - With a USB stick: copy the video onto it, open File Commander on the TV, copy it
+    into the right BAPS folder.
+  - From this Mac (USB debugging on):
+      yt-dlp --remote-components ejs:github --extractor-args youtube:player_client=mweb -f 18 \
+        --write-thumbnail --convert-thumbnails jpg -o "%(title)s.%(ext)s" <YouTube link>
+      adb push "<file>.mp4" /sdcard/BAPS/Kirtan/
+  New videos show up on the home screen by themselves.
+
+UNDO EVERYTHING (USB debugging must be ON on the TV):
+  sh /Users/kartik/Sites/tv-detox-thomson/undo.sh

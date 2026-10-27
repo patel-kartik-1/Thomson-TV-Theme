@@ -1,0 +1,11 @@
+package:com.spotify.tv.android
+package:com.mobisystems.fileman
+package:in.startv.hotstar
+package:com.amazon.minitv.androidtv.app
+package:com.mxtech.videoplayer.television
+package:com.apowersoft.mirror.tv
+package:com.yupptv.androidtv
+package:org.videolan.vlc
+package:com.navkarevent.jojo
+package:com.toxic.apps.reciever
+package:com.ionitech.airscreen

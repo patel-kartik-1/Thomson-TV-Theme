@@ -1,0 +1,53 @@
+2026-10-25 15:20:54 SETTING global window_animation_scale 1.5
+2026-10-25 15:20:55 SETTING global transition_animation_scale 1.5
+2026-10-25 15:20:56 SETTING global animator_duration_scale 1.5
+2026-10-25 15:20:57 SETTING secure screensaver_enabled 1
+2026-10-25 15:20:58 SETTING secure screensaver_activate_on_sleep 1
+2026-10-25 15:20:59 SETTING secure screensaver_activate_on_dock 1
+2026-10-25 15:29:02 UNINSTALL com.amazon.minitv.androidtv.app apk-backup/com.amazon.minitv.androidtv.app
+2026-10-25 15:29:05 UNINSTALL com.yupptv.androidtv apk-backup/com.yupptv.androidtv
+2026-10-25 15:29:07 UNINSTALL com.spotify.tv.android apk-backup/com.spotify.tv.android
+2026-10-25 15:29:09 UNINSTALL com.navkarevent.jojo apk-backup/com.navkarevent.jojo
+2026-10-25 15:29:11 UNINSTALL com.mxtech.videoplayer.television apk-backup/com.mxtech.videoplayer.television
+2026-10-25 15:29:14 UNINSTALL com.apowersoft.mirror.tv apk-backup/com.apowersoft.mirror.tv
+2026-10-25 15:29:16 UNINSTALL com.toxic.apps.reciever apk-backup/com.toxic.apps.reciever
+2026-10-25 15:29:17 UNINSTALL com.ionitech.airscreen apk-backup/com.ionitech.airscreen
+2026-10-25 15:29:29 DISABLE com.amazon.amazonvideo.livingroom
+2026-10-25 15:29:29 DISABLE com.google.android.backdrop
+2026-10-25 15:29:30 DISABLE com.android.dreams.basic
+2026-10-25 15:29:31 DISABLE com.google.android.tvrecommendations
+2026-10-25 15:29:32 DISABLE com.google.android.videos
+2026-10-25 15:29:32 DISABLE com.google.android.play.games
+2026-10-25 15:29:32 DISABLE android.autoinstalls.config.amlogic.device
+2026-10-25 15:29:33 DISABLE com.google.android.leanbacklauncher.recommendations
+2026-10-25 15:29:33 DISABLE com.google.android.feedback
+2026-10-25 15:29:34 DISABLE com.google.android.tv.bugreportsender
+2026-10-25 15:29:34 DISABLE com.google.android.marvin.talkback
+2026-10-25 15:29:44 DISABLE com.google.android.syncadapters.calendar
+2026-10-25 15:29:44 DISABLE com.google.android.syncadapters.contacts
+2026-10-25 15:29:45 DISABLE com.android.camera2
+2026-10-25 15:29:45 DISABLE com.android.printspooler
+2026-10-25 15:29:46 DISABLE com.android.smspush
+2026-10-25 15:29:46 DISABLE com.android.wallpapercropper
+2026-10-25 15:29:47 DISABLE com.sppl.emanual
+2026-10-25 15:29:47 DISABLE com.yunfang.files
+2026-10-25 15:29:48 DISABLE com.ctv.music
+2026-10-25 15:29:48 DISABLE com.ctv.photoplayer
+2026-10-25 15:29:49 DISABLE com.droidlogic.videoplayer
+2026-10-25 15:30:20 INSTALL com.ansub.tvhome
+2026-10-25 15:30:21 HOME com.google.android.tvlauncher/.MainActivity
+2026-10-25 15:44:52 SETTING system screen_off_timeout 300000
+2026-10-25 15:44:52 DISABLE com.google.android.tvlauncher
+2026-10-25 16:26:22 MKDIR /sdcard/BAPS
+2026-10-25 16:26:22 MKDIR /sdcard/BAPS/Aarti
+2026-10-25 16:26:22 MKDIR /sdcard/BAPS/Kirtan
+2026-10-25 16:26:23 MKDIR /sdcard/BAPS/Katha
+2026-10-25 16:26:35 PUSH /sdcard/BAPS/Aarti/Sandhya_Arti_-_Prapti_Nididhyasan.mp4
+2026-10-25 16:26:35 PUSH /sdcard/BAPS/Aarti/Sandhya_Arti_-_Prapti_Nididhyasan.jpg
+2026-10-25 16:26:55 INSTALL com.kartik.tvhome
+2026-10-25 16:26:56 HOME com.ansub.tvhome/.MainActivity
+2026-10-25 16:39:52 UNINSTALL com.ansub.tvhome apk-backup/com.ansub.tvhome
+2026-10-26 20:37:06 MKDIR /sdcard/BAPS/Wallpapers
+2026-10-25 16:47:13 INSTALL com.ionitech.airscreen
+2026-10-26 21:44:30 NOTE cleared Google Cast data (pm clear com.google.android.apps.mediashell) to retry its certificate
+2026-10-26 21:47:46 UNINSTALL com.ionitech.airscreen apk-backup/com.ionitech.airscreen

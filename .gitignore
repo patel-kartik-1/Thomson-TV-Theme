@@ -1,0 +1,10 @@
+.DS_Store
+**/.DS_Store
+
+# Android build outputs and private signing key
+home-src/out/
+home-src/key.jks
+
+# Wallpaper photo not meant for repository (see home-src/assets/README.txt)
+home-src/assets/*.jpg
+home-src/assets/*.png
